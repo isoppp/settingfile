@@ -14,7 +14,7 @@ fi
 echo "Updating existing Homebrew packages"
 brew update
 
-myBrew=( coreutils fzf ghq peco pngquant hub)
+myBrew=( coreutils fzf ghq peco pngquant hub )
 
 myCaskBrew=( qlcolorcode qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo )
 
@@ -28,7 +28,7 @@ done
 echo "Installing Homebrew Cask packages"
 for i in ${myCaskBrew[*]}
 do
-    brew cask install $i 2>/dev/null
+    brew install $i 2>/dev/null
 done
 
 # Clean up the Cellar
